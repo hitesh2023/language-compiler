@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  post 'submit', to: 'compilation#submit'
+  get 'status', to: 'compilation#status'
+  get 'output', to: 'compilation#output'
 end
